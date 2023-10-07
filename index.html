@@ -6,17 +6,18 @@
     <title>Mario Palma</title>
     <link rel="stylesheet" href="./index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="./animation.js"></script>
 <link href="https://fonts.googleapis.com/css2?family=Cinzel&family=Inria+Serif&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <Header class="header">
-        <a href="">Inicio</a>
-        <a href="">Sobre mi</a>
-        <a href="">Proyectos</a>
-        <a href="">Contacto</a>
+        <a href="#profile">Inicio</a>
+        <a href="#abt_me">Sobre mi</a>
+        <a href="#proyects">Proyectos</a>
+        <a href="#contact">Contacto</a>
     </Header>
-    <div class="profile">
+    <div id="profile" class="profile">
         <h1 class="title">Mario Palma</h1>
         <div class="nme">
             <img class="img" src="./resources/profile.png" alt="Mario Palma">
@@ -28,7 +29,7 @@
             </div>
         </div>
     </div>
-    <div class="abt_me">
+    <div id="abt_me" class="abt_me">
         <h2>Sobre mí:</h2>
         <p>Hola, soy Mario Palma y soy un estudiante de desarrollo web fullstack actualmente estudiando en la Universidad Tecnológica Nacional, donde aprendí los fundamentos de la programación, el diseño web, distintos frameworks y participe en un proyecto de desarrollo de un e-commerce.
             También forme parte de la fundación Empujar IT, donde desarrolle mis competencias laborales y habilidades blandas.</p>
@@ -41,15 +42,21 @@
             <a><img src="./resources/CSS.png" alt="  CSS">CSS</a>
         </div>
     </div>
-    <container class="proyects">
+    <container id="proyects" class="proyects">
         <h2 class="t">PROYECTOS:</h2>
         <div class="proyects_c">
             <div class="proyect">
-                <p class="p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam debitis aperiam iste officia reiciendis quaerat non numquam voluptate voluptas itaque!
+                <p class="p">Axia. <br>Landing page de un e-commerce hecha en equipo para un trabajo integrador de la UTN. Muestra los productos de un API, pudiendo filtrar productos por distintas categorias y precios.
+
                 <a href="https://github.com/JuanMartinPC/integrador-grupal" target="_blank">Ir al proyecto</a>
                 </p>
                 <img class="img" src="./resources/proyect.png" alt="proyecto">
-                <div class="div"><h2>tecnologias usadas</h2></div>
+                <div class="div">
+                    <h2>tecnologias usadas</h2>
+                    <ul><li>React</li>
+                        <li>Fetching de API</li>    
+                        </ul>
+                </div>
             </div>
             <div class="proyect">
                 <p class="p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam debitis aperiam iste officia reiciendis quaerat non numquam voluptate voluptas itaque!</p>
@@ -75,4 +82,6 @@
         </div>
     </footer>
 </body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="./animation.js"></script>
 </html>
