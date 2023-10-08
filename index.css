@@ -205,8 +205,10 @@ box-shadow: 10px 10px 250px 0px rgba(0, 0, 0, 0.25) inset;
     text-decoration: none;
 }
 @media only screen and (max-width: 600px) {
+
     html{
-        width: 210%;
+        padding: 0;
+        margin: 0;
     }
     .header a{
         font-size: 25px;
