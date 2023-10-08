@@ -11,16 +11,16 @@
 <link href="https://fonts.googleapis.com/css2?family=Cinzel&family=Inria+Serif&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <Header class="header">
-        <a href="#profile">Inicio</a>
-        <a href="#abt_me">Sobre mi</a>
-        <a href="#proyects">Proyectos</a>
-        <a href="#contact">Contacto</a>
+    <Header id="Header" class="header">
+        <a href="#profile" tabindex="1">Inicio</a>
+        <a href="#abt_me" tabindex="2">Sobre mi</a>
+        <a href="#proyects" tabindex="3">Proyectos</a>
+        <a href="#contact" tabindex="3">Contacto</a>
     </Header>
     <div id="profile" class="profile">
         <h1 class="title">Mario Palma</h1>
         <div class="nme">
-            <img class="img" src="./resources/profile.png" alt="Mario Palma">
+            <img class="img" src="./resources/bg_profile.png" alt="Mario Palma">
             <div>
                 <h2 class="title">FULLSTACK DEVELOPER</h2>
                 <a href="#contact">
@@ -33,13 +33,15 @@
         <h2>Sobre mí:</h2>
         <p>Hola, soy Mario Palma y soy un estudiante de desarrollo web fullstack actualmente estudiando en la Universidad Tecnológica Nacional, donde aprendí los fundamentos de la programación, el diseño web, distintos frameworks y participe en un proyecto de desarrollo de un e-commerce.
             También forme parte de la fundación Empujar IT, donde desarrolle mis competencias laborales y habilidades blandas.</p>
-            <h2>Lenguajes y librerías: </h2>
         <div class="icons">
-            <a><img src="./resources/Vector.png" alt="  React">React</a>
-            <a><img src="./resources/Git.png" alt="  Git">Git</a>
-            <a><img src="./resources/HTML.png" alt="  HTML">HTML</a>
-            <a><img src="./resources/Js.png" alt="  Javascript">Javascript</a>
-            <a><img src="./resources/CSS.png" alt="  CSS">CSS</a>
+            <h3>Lenguajes y librerías: </h3>
+            <container>
+                <a><img src="./resources/Vector.png" alt="  React">  React</a>
+                <a><img src="./resources/Git.png" alt="  Git">  Git</a>
+                <a><img src="./resources/HTML.png" alt="  HTML">  HTML</a>
+                <a><img src="./resources/Js.png" alt="  Javascript">  Javascript</a>
+                <a><img src="./resources/CSS.png" alt="  CSS">  CSS</a>
+            </container>
         </div>
     </div>
     <container id="proyects" class="proyects">

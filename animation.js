@@ -1,20 +1,22 @@
-$(document).ready(function () {
-  $("a").on("click", function (event) {
-    if (this.hash !== "") {
+// $(document).ready(function () {
+//   $("a").on("click", function (event) {
+//     if (this.hash !== "") {
       
-      event.preventDefault();
+//       event.preventDefault();
 
-      var hash = this.hash;
+//       const hash = this.hash;
 
-      $("html, body").animate(
-        {
-          scrollTop: $(hash).offset().top,
-        },
-        550,
-        function () {
-          window.location.hash = hash;
-        }
-      );
-    }
-  });
-});
+//       $("html, body").animate(
+//         {
+//           scrollTop: $(hash).offset().top,
+//         },
+//         550,
+//         function () {
+//           window.location.hash = hash;
+//         }
+//       );
+//     }
+//   });
+// });
+
+
