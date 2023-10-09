@@ -231,6 +231,7 @@ body{
         font-size: 2rem;
     }
     * h2{
+        color: #E2FFFF;
         font-size: 3rem;
     }
     body{
@@ -273,6 +274,7 @@ body{
     }
     .proyects p{
         font-size: small;
+        color: black;
     }
     .proyects .proyects_c{
         flex-wrap: wrap;
