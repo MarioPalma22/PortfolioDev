@@ -230,7 +230,8 @@ body{
     * p{
         font-size: 2rem;
     }
-    * h2{
+    * h2,
+    .abt_me h3{
         color: #E2FFFF;
         font-size: 3rem;
     }
@@ -263,14 +264,22 @@ body{
         font-size: 2.5rem;
     }
     .abt_me{
-        max-width: 1336px;
+        width: 1336px;
         margin: 3rem;
         align-self: center;
         margin: 5rem 5rem 0 5rem ;
     }
-
+    .abt_me p{
+        max-width: 800px;
+    }
     .abt_me .icons img{
         height: 3rem;
+    }
+    .abt_me .icons .container{
+        font-size: x-large;
+    }
+    .proyects{
+        padding: 5rem 0 5rem 0;
     }
     .proyects p{
         font-size: small;
@@ -281,5 +290,16 @@ body{
         justify-content: center;
         gap: 1.5rem;
         overflow-x: visible;
+    }
+    .contact{
+        padding: 5rem 0 2rem 0;
+    }
+    .contact p{
+        width: 900px;
+    }
+    .contact .contacts{
+        font-size: 2rem}
+    .contact .contacts img{
+        width: 3rem;
     }
 }
