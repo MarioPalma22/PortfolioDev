@@ -10,18 +10,20 @@ body{
     background: linear-gradient(78deg, rgba(62, 62, 62, 0.432) 0%, rgba(255, 255, 255, 0.08) 84.55%, rgba(11, 88, 132, 0.233) 100%), linear-gradient(109deg, rgb(151, 98, 168) 0%, rgb(110, 69, 124) 13.22%, rgb(79, 42, 91) 43.22%, rgb(54, 10, 69) 71.01%);
 }
 .header{
-    height: 1.5rem;
+    height: 2rem;
     background: linear-gradient(78deg, rgba(62, 62, 62, 0.432) 0%, rgba(255, 255, 255, 0.08) 84.55%, rgba(11, 88, 132, 0.233) 100%), linear-gradient(109deg, rgb(151, 98, 168) 0%, rgb(110, 69, 124) 13.22%, rgba(79, 42, 91, 0.836) 43.22%, rgb(54, 10, 69) 71.01%);
     display: flex;
-
+    
     align-items: center;
     justify-content: space-around;
-
+    
     position:sticky;
     top: 0;
     transition: 1s;
 }
-
+.header a{
+    text-decoration: none;
+}
 .profile{
     background: linear-gradient(78deg, rgba(0, 0, 0, 0.15) 0%, rgba(255, 255, 255, 0.08) 84.55%, rgba(11, 88, 132, 0.15) 100%), linear-gradient(120deg, #9662A8 0%, #6E457C 13.46%, #4F2A5B 44.01%, #4F0E65 72.32%);
     box-shadow: 10px 10px 250px 0px rgba(0, 0, 0, 0.25) inset;
@@ -104,6 +106,7 @@ body{
 }
 .abt_me p{
     padding: 1rem;
+    text-align: center;
 }
 .abt_me .icons h3{
     text-shadow:3px 4px 1px rgba(0, 0, 0, 0.50);
@@ -218,38 +221,52 @@ body{
 }
 
 @media screen and (min-width:766px){
+    * h1{
+        font-size: 4rem;
+    }
+    * p{
+        font-size: 2rem;
+    }
+    * h2{
+        font-size: 3rem;
+        color: red;
+    }
+    body{
+        display: flex;
+        flex-direction: column;
+    }
     
     .header{
-        height: 3rem;
-        font-size: 1.8em;
+        height: 5rem;
+        font-size: 3rem;
     }
     .header a{
         text-decoration: none;
     }
-    .profile .title{
-        font-size: 5em;
+    .profile{
+        padding:2rem 0 17rem 0;
     }
+
     .profile .nme  img{
-        height: 90%;
+        height: 100%;
         object-fit: contain;
     }
     .profile .nme .title,
-    .profile .nme button{
-        font-size: x-large;
+    * button{
+        font-size: 2.5rem;
     }
     .abt_me{
-        font-size: large;
+        max-width: 1336px;
         margin: 3rem;
+        align-self: center;
+        margin: 5rem 5rem 0 5rem ;
     }
-    .abt_me h2,
-    .abt_me h3{
-        font-size: xx-large;
-    }
+
     .abt_me .icons img{
         height: 3rem;
     }
-    .proyects .t{
-        font-size: x-large;
+    .proyects p{
+        font-size: small;
     }
     .proyects .proyects_c{
         flex-wrap: wrap;
@@ -258,171 +275,3 @@ body{
         overflow-x: visible;
     }
 }
-/* 
-
-.profile .nme h2{
-    padding: .5rem;
-    font-size: 3rem;
-}
-
-
-.abt_me h2{
-    font-size: 3rem;
-}
-.abt_me p{
-    max-width: 750px;
-    padding: 3rem;
-    font-size: 1.5rem;
-}
-.abt_me .icons{
-    padding: 1rem;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.4rem;
-    gap: 1rem;
-}
-.proyects .t{
-    padding: 3rem;
-    text-align: center;
-    font-size: 3rem;
-    text-shadow: 2px 10px 4px rgba(0, 0, 0, 0.50);
-
-}
-.proyects .proyects_c{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 1rem;
-    padding: 4rem;
-}
-
-
-.proyects .proyects_c .proyect img{
-    width: 266px;
-}
-
-.proyects .proyect p{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-.proyects .proyect p,
-.proyects .proyect p a,
-.proyects .proyect div h2{
-    padding: 1rem;
-    background: #d9d9d9b7;
-    color: black;
-    text-align: center;
-    font-size: 1.3rem;
-    align-items: center;
-}
-
-.contact{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-}
-.contact h2{
-    padding: 4rem 3rem 3rem 3rem;
-    font-size: 4rem;
-    text-shadow: 2px 10px 4px rgba(0, 0, 0, 0.50);
-}
-.contact p{
-    width: 750px;
-    text-align: center;
-    font-size: 2rem;
-    padding: 1rem;
-}
-.contact button{
-    padding: .6rem;
-    font-family: Inria Serif;
-    border-radius: 0.6rem;
-    background: #1D0F30;
-    color: white;
-    font-size: 1.5rem;
-    border: 0;
-    margin-top: 2rem;
-}
-.contact .contacts{
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    padding: 1.5rem;
-    gap: 1.5rem;
-    font-weight: 500;
-    font-size: 2rem;
-    text-decoration: none;
-}
-@media screen and (max-width: 600px) {
-
-    html{
-        padding: 0;
-        margin: 0;
-    }
-    .header{
-        width: 100%;
-    }
-    .header a{
-        font-size: 25px;
-    }
-
-    .profile{
-        padding-top: 2rem;
-        width: 100%;
-    }
-    .profile .title{
-        margin-top: 5rem;
-    }
-    .profile .nme h2,
-    .profile .nme button{
-        margin-left: 2rem;
-    }
-
-    .abt_me{
-        width: 100vh;
-        margin: 0;
-        gap: 5rem;
-    }
-    .abt_me p{
-        padding: 1rem 2rem 3rem 2rem ;
-    }
-    
-    
-
-    .proyects .proyects_c .proyect p{
-        width: 10rem;
-    }
-  }
-  @media screen and (max-width:426px) {
-    .body{
-        width: max-content;
-    }
-    .header{
-        width: 100%;
-    }
-
-    .profile{
-        width: max-content;
-        padding-top: 2rem;
-    }
-    .contact{
-        width: 100vw;
-    }
-    .abt_me{
-        margin: .5rem 0 .5rem .5rem;
-        height: max-content;
-        width: max-content;
-    }
-    .proyects{
-        width:100%;
-        display: inline-block;
-
-    }
-    .contact{
-        width: max-content;
-    }
-  } */
