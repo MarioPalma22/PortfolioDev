@@ -10,76 +10,262 @@ body{
     background: linear-gradient(78deg, rgba(62, 62, 62, 0.432) 0%, rgba(255, 255, 255, 0.08) 84.55%, rgba(11, 88, 132, 0.233) 100%), linear-gradient(109deg, rgb(151, 98, 168) 0%, rgb(110, 69, 124) 13.22%, rgb(79, 42, 91) 43.22%, rgb(54, 10, 69) 71.01%);
 }
 .header{
+    height: 1.5rem;
     background: linear-gradient(78deg, rgba(62, 62, 62, 0.432) 0%, rgba(255, 255, 255, 0.08) 84.55%, rgba(11, 88, 132, 0.233) 100%), linear-gradient(109deg, rgb(151, 98, 168) 0%, rgb(110, 69, 124) 13.22%, rgba(79, 42, 91, 0.836) 43.22%, rgb(54, 10, 69) 71.01%);
-    min-height: 4.5rem;
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 100vw;
 
-    position:fixed;
+    align-items: center;
+    justify-content: space-around;
+
+    position:sticky;
     top: 0;
     transition: 1s;
 }
-.header a{
-    text-decoration: none;
-    color: #E2FFFF;
-    font-size: 40px;
-    transition: .5s;
-}
 
-.header a:hover{
-    text-decoration: initial underline 5px #E2FFFF;
-    transition: ease-in .5s;
-}
 .profile{
-    padding: 5rem;
     background: linear-gradient(78deg, rgba(0, 0, 0, 0.15) 0%, rgba(255, 255, 255, 0.08) 84.55%, rgba(11, 88, 132, 0.15) 100%), linear-gradient(120deg, #9662A8 0%, #6E457C 13.46%, #4F2A5B 44.01%, #4F0E65 72.32%);
-box-shadow: 10px 10px 250px 0px rgba(0, 0, 0, 0.25) inset;
+    box-shadow: 10px 10px 250px 0px rgba(0, 0, 0, 0.25) inset;
+
+    padding-bottom: 2rem;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
 }
 .profile .title{
-    font-size: 4.5rem;
+    padding-top: 2rem;
+    text-shadow:3px 4px 1px rgba(0, 0, 0, 0.50);
 }
 
 .profile .nme  img{
-    height: 100%;
-     width: 100%;
-     object-fit: contain;
+    height: 270px;
+    object-fit: contain;
 }
-.profile .nme{
-    padding-left: .5rem;
+.profile .nme h2{
+    font-size: large;
+    padding-bottom: .5rem;
+}
+.profile .nme button{
+    padding: .3rem;
+    font-family: Inria Serif;
+    border-radius: 0.5rem;
+    background: #1D0F30;
+    color: white;
+    border: 0;
+}
+
+
+.proyects .proyect img{
+    height: 200px;
+}
+.proyects .proyects_c .proyect{
+    background: rgba(29, 15, 48, 0.65);
+    display: grid;
+    padding: .5rem;
+    min-height: fit-content;
+    max-width: 600px;
+    max-height: 400px;
+
+    justify-items: center;
+    gap: 0;
+
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 1fr 1fr 1fr; 
+    
+    
+    grid-template-areas: 
+    "p img"
+    "p img"
+    "p div"; 
+}
+
+.proyects .proyects_c .proyect p{
+    grid-area: p;
+}
+.proyects .proyects_c .proyect img{
+    grid-area: img;
+}
+.proyects .proyects_c .proyect div{
+    grid-area: div;
+}
+
+.abt_me{
+    background: #1D0F30;
+
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    margin: .5rem;
+    align-items: center;
+    gap: .5rem;
+    padding: 2rem 0 4rem 0;
 }
+.abt_me h2{
+        text-shadow:3px 4px 1px rgba(0, 0, 0, 0.50);
+    padding-top: 3rem;
+    font-weight: bolder;
+}
+.abt_me p{
+    padding: 1rem;
+}
+.abt_me .icons h3{
+    text-shadow:3px 4px 1px rgba(0, 0, 0, 0.50);
+}
+.abt_me .icons{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .5rem;
+    padding: 0 2rem 0 2rem ;
+}
+.abt_me .icons .container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin: 1rem;
+}
+
+.abt_me .icons img{
+    height: 2.5rem;
+}
+
+.proyects .t{
+    text-shadow: 3px 4px 1px rgba(0, 0, 0, 0.50);
+    padding: 3rem 0 2rem 0 ;
+    text-align: center;
+}
+.proyects .proyects_c{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+}
+.proyects .proyects_c .proyect{
+    scroll-snap-align: center;
+    gap: .2rem;
+}
+.proyects .proyects_c .proyect p{
+    width: 110px;
+}
+.proyects .proyects_c .proyect p{
+    width: 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.proyects .proyect img{
+    height: 150px;
+}
+
+.proyects .proyects_c .proyect p,
+.proyects .proyects_c .proyect p a,
+.proyects .proyects_c .proyect div h2{
+    padding: .5rem;
+    background: #d9d9d9b7;
+    color: black;
+    text-align: center;
+    align-items: center;
+    list-style-type: none;
+}
+.proyects .proyects_c .proyect div h2{
+    font-size: larger;
+}
+.proyects .proyect p a{
+    border-radius: .5rem;
+    text-decoration: none;
+    width: fit-content;
+    
+    transition: background-color ease-in .3s ; 
+    transition: color ease-in .3s ;
+}
+.proyects .proyect p a:hover{
+    background-color: #1D0F30;
+    color: #E2FFFF;
+}
+.proyects .proyect div ul li{
+    list-style-type: none;
+    background: #d9d9d9b7;
+    color: black;
+}
+
+.contact{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+.contact h2{
+    text-shadow: 3px 4px 1px rgba(0, 0, 0, 0.50);
+    padding-top: 2rem;
+}
+.contact p{
+    margin: 1rem;
+    text-align: center;
+    padding-bottom: 1rem;
+}
+.contact button{
+    padding: .3rem;
+    font-family: Inria Serif;
+    border-radius: 0.5rem;
+    background: #1D0F30;
+    color: white;
+    border: 0;
+}
+.contact .contacts{
+    padding-bottom: .5rem;}
+.contact .contacts img{
+    width: 2.5rem;
+}
+
+@media screen and (min-width:766px){
+    
+    .header{
+        height: 3rem;
+        font-size: 1.8em;
+    }
+    .header a{
+        text-decoration: none;
+    }
+    .profile .title{
+        font-size: 5em;
+    }
+    .profile .nme  img{
+        height: 90%;
+        object-fit: contain;
+    }
+    .profile .nme .title,
+    .profile .nme button{
+        font-size: x-large;
+    }
+    .abt_me{
+        font-size: large;
+        margin: 3rem;
+    }
+    .abt_me h2,
+    .abt_me h3{
+        font-size: xx-large;
+    }
+    .abt_me .icons img{
+        height: 3rem;
+    }
+    .proyects .t{
+        font-size: x-large;
+    }
+    .proyects .proyects_c{
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1.5rem;
+        overflow-x: visible;
+    }
+}
+/* 
+
 .profile .nme h2{
     padding: .5rem;
     font-size: 3rem;
 }
-.profile .nme button{
-    padding: .6rem;
-    font-family: Inria Serif;
-    border-radius: 0.6rem;
-    background: #1D0F30;
-    color: white;
-    font-size: 2rem;
-    border: 0;
-}
-.abt_me{
-    margin: 5rem;
-    padding: 6rem 0 6rem 0;
-    background: #1D0F30;
 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+
 .abt_me h2{
     font-size: 3rem;
 }
@@ -113,34 +299,6 @@ box-shadow: 10px 10px 250px 0px rgba(0, 0, 0, 0.25) inset;
     padding: 4rem;
 }
 
-.proyects .proyects_c .proyect{
-    background: rgba(29, 15, 48, 0.65);
-    display: grid;
-    padding: .5rem;
-    min-height: fit-content;
-    max-width: 600px;
-    max-height: 400px;
-
-    justify-items: center;
-    gap: 0;
-
-    grid-template-columns: 1fr 1fr; 
-    grid-template-rows: 1fr 1fr 1fr; 
-   gap: 1rem;
-    grid-template-areas: 
-      "p img"
-      "p img"
-      "p div"; 
-  }
-.proyects .proyects_c .proyect p{
-    grid-area: p;
-}
-.proyects .proyects_c .proyect img{
-    grid-area: img;
-}
-.proyects .proyects_c .proyect div{
-    grid-area: div;
-}
 
 .proyects .proyects_c .proyect img{
     width: 266px;
@@ -161,19 +319,7 @@ box-shadow: 10px 10px 250px 0px rgba(0, 0, 0, 0.25) inset;
     font-size: 1.3rem;
     align-items: center;
 }
-.proyects .proyect p a{
-    padding: .5rem;
-    border-radius: .5rem;
-    text-decoration: none;
-    width: fit-content;
 
-    transition: background-color ease-in .3s ; 
-    transition: color ease-in .3s ;
-}
-.proyects .proyect p a:hover{
-    background-color: #1D0F30;
-    color: #E2FFFF;
-}
 .contact{
     display: flex;
     flex-direction: column;
@@ -246,19 +392,7 @@ box-shadow: 10px 10px 250px 0px rgba(0, 0, 0, 0.25) inset;
     }
     
     
-    .proyects .proyects_c{
-        height: 600px;
-        flex-wrap: nowrap;
-        flex-direction: row;
-        overflow-x: scroll;
-        scroll-snap-type: x mandatory;
-        gap: 5rem;
-        align-items: center;
-    }
-    .proyects .proyects_c .proyect{
-        height: 700px;
-        scroll-snap-align: center;
-    }
+
     .proyects .proyects_c .proyect p{
         width: 10rem;
     }
@@ -291,4 +425,4 @@ box-shadow: 10px 10px 250px 0px rgba(0, 0, 0, 0.25) inset;
     .contact{
         width: max-content;
     }
-  }
+  } */
