@@ -6,8 +6,6 @@ html{
     margin: 0;
     padding: 0;
     color: #E2FFFF;
-    /*  */
-    /* color: #E2FFFF; */
 }
 body{
     background: linear-gradient(78deg, rgba(62, 62, 62, 0.432) 0%, rgba(255, 255, 255, 0.08) 84.55%, rgba(11, 88, 132, 0.233) 100%), linear-gradient(109deg, rgb(151, 98, 168) 0%, rgb(110, 69, 124) 13.22%, rgb(79, 42, 91) 43.22%, rgb(54, 10, 69) 71.01%);
@@ -22,10 +20,13 @@ body{
     
     position:sticky;
     top: 0;
-    transition: 1s;
 }
 .header a{
     text-decoration: none;
+    transition: ease-in .1s;
+}
+.header a:hover{
+    border-bottom: solid  5px;
 }
 .profile{
     background: linear-gradient(78deg, rgba(0, 0, 0, 0.15) 0%, rgba(255, 255, 255, 0.08) 84.55%, rgba(11, 88, 132, 0.15) 100%), linear-gradient(120deg, #9662A8 0%, #6E457C 13.46%, #4F2A5B 44.01%, #4F0E65 72.32%);
@@ -238,6 +239,7 @@ body{
     body{
         display: flex;
         flex-direction: column;
+        overflow-x: hidden;
     }
     
     .header{
@@ -264,7 +266,6 @@ body{
         font-size: 2.5rem;
     }
     .abt_me{
-        width: 1336px;
         margin: 3rem;
         align-self: center;
         margin: 5rem 5rem 0 5rem ;
@@ -301,5 +302,11 @@ body{
         font-size: 2rem}
     .contact .contacts img{
         width: 3rem;
+    }
+}
+@media only screen and (min-width:1024px){
+    .abt_me{
+
+        width: 1024px;
     }
 }
