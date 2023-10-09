@@ -210,12 +210,16 @@ box-shadow: 10px 10px 250px 0px rgba(0, 0, 0, 0.25) inset;
         padding: 0;
         margin: 0;
     }
+    .header{
+        width: 100vh;
+    }
     .header a{
         font-size: 25px;
     }
 
     .profile{
         padding-top: 2rem;
+        width: 100vh;
     }
     .profile .title{
         margin-top: 5rem;
@@ -226,7 +230,7 @@ box-shadow: 10px 10px 250px 0px rgba(0, 0, 0, 0.25) inset;
     }
 
     .abt_me{
-        min-width: 375px;
+        width: 100vh;
         margin: 0;
         gap: 5rem;
     }
@@ -250,5 +254,14 @@ box-shadow: 10px 10px 250px 0px rgba(0, 0, 0, 0.25) inset;
     }
     .proyects .proyects_c .proyect p{
         width: 10rem;
+    }
+  }
+  @media only screen and (max-width:426px) {
+    .header{
+        width: 100%;
+    }
+
+    .profile{
+        width: 100vh;
     }
   }
