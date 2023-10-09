@@ -1,5 +1,6 @@
 html{
     scroll-behavior: smooth;
+    zoom: 1.0;
 }
 *{
     margin: 0;
@@ -46,7 +47,9 @@ box-shadow: 10px 10px 250px 0px rgba(0, 0, 0, 0.25) inset;
 }
 
 .profile .nme  img{
-    max-height: 650px;
+    height: 100%;
+     width: 100%;
+     object-fit: contain;
 }
 .profile .nme{
     padding-left: .5rem;
@@ -204,14 +207,14 @@ box-shadow: 10px 10px 250px 0px rgba(0, 0, 0, 0.25) inset;
     font-size: 2rem;
     text-decoration: none;
 }
-@media only screen and (max-width: 600px) {
+@media screen and (max-width: 600px) {
 
     html{
         padding: 0;
         margin: 0;
     }
     .header{
-        width: 100vh;
+        width: 100%;
     }
     .header a{
         font-size: 25px;
@@ -219,7 +222,7 @@ box-shadow: 10px 10px 250px 0px rgba(0, 0, 0, 0.25) inset;
 
     .profile{
         padding-top: 2rem;
-        width: 100vh;
+        width: 100%;
     }
     .profile .title{
         margin-top: 5rem;
@@ -256,12 +259,14 @@ box-shadow: 10px 10px 250px 0px rgba(0, 0, 0, 0.25) inset;
         width: 10rem;
     }
   }
-  @media only screen and (max-width:426px) {
+  @media screen and (max-width:426px) {
     .header{
         width: 100%;
     }
 
     .profile{
-        width: 100vh;
+        width: max-content;
+        padding-top: 2rem;
+        
     }
   }
