@@ -284,7 +284,9 @@ box-shadow: 10px 10px 250px 0px rgba(0, 0, 0, 0.25) inset;
         width: max-content;
     }
     .proyects{
-        width:max-content;
+        width:100%;
+        display: inline-block;
+
     }
     .contact{
         width: max-content;
