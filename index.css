@@ -23,6 +23,7 @@ body{
     position:sticky;
     top: 0;
     transition: 1s;
+    z-index: +1;
 }
 .header a{
     text-decoration: none;
