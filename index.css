@@ -219,16 +219,12 @@ body{
     border: 0;
 }
 .contact .contacts{
-    font-size: 2rem;
-    display: flex;
-    flex-wrap: nowrap;
-    flex-direction: row;
-    list-style-type: none;
-}
+    padding-bottom: .5rem;}
 .contact .contacts img{
     width: 2.5rem;
 }
-.contact .contacts li{
+.contact .contacts a{
+
     text-decoration: none;
 }
 @media screen and (min-width:321px){
