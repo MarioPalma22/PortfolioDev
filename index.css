@@ -219,11 +219,21 @@ body{
     border: 0;
 }
 .contact .contacts{
-    padding-bottom: .5rem;}
+    font-size: 2rem;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    list-style-type: none;
+}
 .contact .contacts img{
     width: 2.5rem;
 }
+.contact .contacts li{
+    text-decoration: none;
+}
+@media screen and (min-width:321px){
 
+}
 @media screen and (min-width:766px){
     * h1{
         font-size: 4rem;
@@ -275,11 +285,15 @@ body{
     }
     .proyects p{
         font-size: small;
+        max-width: fit-content;
     }
     .proyects .proyects_c{
         flex-wrap: wrap;
         justify-content: center;
         gap: 1.5rem;
         overflow-x: visible;
+    }
+    .contact p {
+        width: 700px;
     }
 }
