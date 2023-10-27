@@ -5,22 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mario Palma</title>
     <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./header.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <script src="./animation.js"></script>
 <link href="https://fonts.googleapis.com/css2?family=Cinzel&family=Inria+Serif&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <Header id="Header" class="header">
-        <a href="#profile" tabindex="1">Inicio</a>
-        <a href="#abt_me" tabindex="2">Sobre mi</a>
-        <a href="#proyects" tabindex="3">Proyectos</a>
-        <a href="#contact" tabindex="3">Contacto</a>
-    </Header>
+    <div id="menuDemo">
+        <!--start CssMenu-->
+        <div class="menu-icon-wrapper">
+            <div class="menu-icon" onclick="toggleCssMenu(this)">
+                <div class="three-line">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+        <div id="cssmenu" class="cssmenu">
+            <ul>
+                <li><a href="#profile" tabindex="1">Inicio</a></li>
+                <li><a href="#abt_me" tabindex="2">Sobre mi</a></li>
+                <li><a href="#proyects" tabindex="3">Proyectos</a></li>
+                <li><a href="#contact" tabindex="4">Contacto</a></li>
+            </ul>
+        </div>
     <div id="profile" class="profile">
         <h1 class="title">Mario Palma</h1>
         <div class="nme">
-            <img class="img" src="./resources/bg_profile.png" alt="Mario Palma">
+            <img class="img" src="./resources/bg_profile2.png" alt="Mario Palma">
             <div>
                 <h2 class="title">FULLSTACK DEVELOPER</h2>
                 <a href="#contact">
@@ -74,7 +88,8 @@
     </container>
     <footer class="contact" id="contact">
         <h2>CONTACTO</h2>
-        <p>Inserte el llamado de accion mas atractivo del mercado, lo hubiera hecho yo pero me pase el 80% del tiempo pensando en que poner en “sobre mi”
+        <p>
+            Si estas buscando un desarrollador web con ganas de aprender y que pueda ofrecer soluciones que cumplan con tus necesidades no dudes en contactarme
         <br><button>Descargar CV</button>
         </p>
         <div class="contacts">
