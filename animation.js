@@ -4,11 +4,14 @@ function toggleCssMenu(icon) {
     if (icon.className.indexOf('active') == -1) {
         icon.className = 'menu-icon active';
         cssmenu.style.display = "block";
-        setTimeout(function(){cssmenu.className = 'active';},0);            
+        cssmenu.style.backgroundColor = "#230327";
+        setTimeout(function(){cssmenu.className = 'active';},0);
+        // console.log("Funciona!!!");
     }
     else {
         icon.className = 'menu-icon';
         cssmenu.className = '';
-        setTimeout(function(){cssmenu.style.display = "none";},411); 
+        setTimeout(function(){cssmenu.style.display = "none";},411);
     }
 }
+
