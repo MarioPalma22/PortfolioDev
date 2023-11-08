@@ -54,9 +54,14 @@
 }
 .cssmenu li:hover > span, .cssmenu li:hover > a
 {  
+<<<<<<< HEAD
     color:black;
     background-color:#a561ad67;
     border-radius: 15px;
+=======
+    color:#CCCCCC;
+    background-color:#000000;
+>>>>>>> 7c3a85d3f8e38122117c7e4c90731ae04399c84d
 }
 
 /*Sub level items
@@ -190,11 +195,15 @@
 }
 
 @media only screen and (max-width: 600px) {
+<<<<<<< HEAD
     .menu-icon-wrapper{ 
         display: block;
         /* top: 0;
         position: sticky; */
     }
+=======
+    .menu-icon-wrapper{ display: block;}
+>>>>>>> 7c3a85d3f8e38122117c7e4c90731ae04399c84d
     .menu-icon {display:inline-block;}
 
     .cssmenu  {
@@ -203,9 +212,15 @@
         display:none;
         background-color:black;
         box-shadow: 10px 10px 250px 0px rgba(0, 0, 0, 0.25) inset;
+<<<<<<< HEAD
         border:1px solid rgba(255, 255, 255, 0.979);
         box-sizing:border-box;
         z-index:3;
+=======
+        border:1px solid rgba(255,255,255,0.1);
+        box-sizing:border-box;
+        z-index:999999990;
+>>>>>>> 7c3a85d3f8e38122117c7e4c90731ae04399c84d
     }
 
     /*--begin mark1--*/
@@ -218,12 +233,21 @@
     }
 
     .cssmenu.active {
+<<<<<<< HEAD
+=======
+        background-color:linear-gradient(78deg, rgba(0, 0, 0, 0.15) 0%, rgba(255, 255, 255, 0.08) 84.55%, rgba(11, 88, 132, 0.15) 100%), linear-gradient(120deg, #9662A8 0%, #6E457C 13.46%, #4F2A5B 44.01%, #4F0E65 72.32%);
+>>>>>>> 7c3a85d3f8e38122117c7e4c90731ae04399c84d
         top:0;
         transition:all 411ms cubic-bezier(.16,.76,.45,1);
     }
 
+<<<<<<< HEAD
     #mcmenu {z-index:4;}
 -fixed-bg {background:#000;z-index:9;}
+=======
+    #mcmenu {z-index:1000000004;}
+-fixed-bg {background:#000;z-index:1000000000;}
+>>>>>>> 7c3a85d3f8e38122117c7e4c90731ae04399c84d
 -fixed-bg.showing {display:block;opacity:0;}-fixed-bg.active {opacity:0.4;}
 .menu-icon.active {position:fixed;top:12px;right:12px;z-index:1000000006;}
 
@@ -282,8 +306,12 @@
 .three-line{
   width: 36px;
   height: 24px;
+<<<<<<< HEAD
   /* top: 0;
   position: sticky; */
+=======
+  position: relative;
+>>>>>>> 7c3a85d3f8e38122117c7e4c90731ae04399c84d
   display: inline-block;
   font-size: 0;
 }
@@ -319,8 +347,12 @@
   transform: rotate(315deg);
   top: 10px;
 }
+<<<<<<< HEAD
 
 /* Animaciones */
+=======
+/*End of styles for mobile mode ########*/
+>>>>>>> 7c3a85d3f8e38122117c7e4c90731ae04399c84d
 
 @keyframes topItemAnimation{
   from {opacity:0; transform:translate3d(0, -10vh, 0);}
